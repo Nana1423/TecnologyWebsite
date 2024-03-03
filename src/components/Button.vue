@@ -30,7 +30,7 @@ const buttonStyle = {
 </script>
 
 <template>
-    <button class="bg-primary2 text-[18px] font-semibold py-5 rounded-full"
+    <button class="bg-primary2 text-[18px] font-semibold py-5 rounded-full border border-[#DCDCDC]"
         :class="buttonStyle[format].horizontalPadding, buttonsColor[color], `text-[${textColor}]`">
         {{ props.text }}
     </button>
