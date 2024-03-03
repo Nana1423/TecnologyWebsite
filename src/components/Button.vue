@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const props = defineProps<{
-  text: string;
-  format?: 'small' | 'default' | 'largeSize';
-  color?: 'black' | 'white' | 'blue';
+    text: string;
+    format?: 'small' | 'default' | 'largeSize';
+    color?: 'black' | 'white' | 'blue';
 }>();
 
 const format = props.format ? props.format : 'small';
@@ -30,7 +30,8 @@ const buttonStyle = {
 </script>
 
 <template>
-    <button class="bg-primary2 text-[18px] font-semibold py-5 rounded-full border border-[#DCDCDC]"
+    <button
+        class="bg-primary2 text-[14px] lg:text-[18px] font-semibold py-5 rounded-full border border-[#DCDCDC] hover:bg-[#5236FF] hover:text-[#FFFFFF] transition ease-in-out"
         :class="buttonStyle[format].horizontalPadding, buttonsColor[color], `text-[${textColor}]`">
         {{ props.text }}
     </button>

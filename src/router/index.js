@@ -6,6 +6,7 @@ import BlogView from "../views/BlogView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  linkActiveClass: 'active',
   routes: [
     {
       path: "/",
@@ -18,15 +19,15 @@ const router = createRouter({
       component: FeaturesView,
     },
     {
-        path: "/pricing",
-        name: "pricing",
-        component: PricingView,
-      },
-      {
-        path: "/blog",
-        name: "blog",
-        component: BlogView,
-      },
+      path: "/pricing",
+      name: "pricing",
+      component: PricingView,
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      component: BlogView,
+    },
   ],
 });
 
