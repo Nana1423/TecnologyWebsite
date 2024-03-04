@@ -6,7 +6,7 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-    <hr class="border border-[#DCDCDC]">
+    <hr class="border border-[#DCDCDC] mt-10">
     <div class="flex flex-col items-center gap-5 py-4 sm:flex-row sm:justify-between md:py-8">
         <Logo />
         <ButtonVue class="max-w-[300px]" text="See our Case Studies" format="small" color="white" />
